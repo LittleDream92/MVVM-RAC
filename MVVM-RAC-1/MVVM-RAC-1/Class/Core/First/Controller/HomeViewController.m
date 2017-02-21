@@ -10,6 +10,7 @@
 #import "HomeTableView.h"
 #import "HomeView.h"
 #import "HomeTableViewViewModel.h"
+#import "LoginViewController.h"
 
 @interface HomeViewController ()
 
@@ -58,12 +59,14 @@
     [[self.viewModel.cellClickSubject takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id x) {
         
         @strongify(self);
-        NSLog(@"登录");
+        LoginViewController *loginvc = [[LoginViewController alloc] init];
+        [self.navigationController pushViewController:loginvc animated:YES];
         
     }];
     
 }
 
+/*
 -(void)layoutNavigation {
     
 }
@@ -71,6 +74,7 @@
 -(void)getNewData {
     
 }
+*/
 
 #pragma mark - lazyLoading
 -(HomeTableViewViewModel *)viewModel {

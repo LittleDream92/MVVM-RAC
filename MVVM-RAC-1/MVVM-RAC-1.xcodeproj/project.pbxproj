@@ -40,6 +40,9 @@
 		A81441AA1E5C20B700E95866 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A81441A91E5C20B700E95866 /* BaseRequest.m */; };
 		A81441AE1E5C211B00E95866 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A81441AC1E5C211B00E95866 /* BaseViewModel.m */; };
 		A81441B11E5C214900E95866 /* HomeTableViewViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A81441B01E5C214900E95866 /* HomeTableViewViewModel.m */; };
+		A81441B81E5C249F00E95866 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A81441B71E5C249F00E95866 /* LoginViewController.m */; };
+		A81441BB1E5C290C00E95866 /* RootTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A81441BA1E5C290C00E95866 /* RootTableViewCell.m */; };
+		A81441BE1E5C298700E95866 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A81441BD1E5C298700E95866 /* HomeTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +104,12 @@
 		A81441AD1E5C211B00E95866 /* BaseViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModelProtocol.h; sourceTree = "<group>"; };
 		A81441AF1E5C214900E95866 /* HomeTableViewViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewViewModel.h; sourceTree = "<group>"; };
 		A81441B01E5C214900E95866 /* HomeTableViewViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewViewModel.m; sourceTree = "<group>"; };
+		A81441B61E5C249F00E95866 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A81441B71E5C249F00E95866 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A81441B91E5C290C00E95866 /* RootTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewCell.h; sourceTree = "<group>"; };
+		A81441BA1E5C290C00E95866 /* RootTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewCell.m; sourceTree = "<group>"; };
+		A81441BC1E5C298700E95866 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		A81441BD1E5C298700E95866 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		C8880BE7B8339C4502BD4867 /* Pods-MVVM-RAC-1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-RAC-1.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-RAC-1/Pods-MVVM-RAC-1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,6 +234,8 @@
 				A814418D1E5C1FDC00E95866 /* RootView.h */,
 				A814418E1E5C1FDC00E95866 /* RootView.m */,
 				A814418F1E5C1FDC00E95866 /* RootViewProtocol.h */,
+				A81441B91E5C290C00E95866 /* RootTableViewCell.h */,
+				A81441BA1E5C290C00E95866 /* RootTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,10 +297,12 @@
 		A814415B1E5C1EDE00E95866 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A81441841E5C1FA000E95866 /* HomeTableView.h */,
-				A81441851E5C1FA000E95866 /* HomeTableView.m */,
 				A81441861E5C1FA000E95866 /* HomeView.h */,
 				A81441871E5C1FA000E95866 /* HomeView.m */,
+				A81441841E5C1FA000E95866 /* HomeTableView.h */,
+				A81441851E5C1FA000E95866 /* HomeTableView.m */,
+				A81441BC1E5C298700E95866 /* HomeTableViewCell.h */,
+				A81441BD1E5C298700E95866 /* HomeTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -403,6 +416,8 @@
 		A81441B31E5C241600E95866 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A81441B61E5C249F00E95866 /* LoginViewController.h */,
+				A81441B71E5C249F00E95866 /* LoginViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -564,6 +579,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A81441BE1E5C298700E95866 /* HomeTableViewCell.m in Sources */,
 				A814413D1E5C1DDC00E95866 /* AppDelegate.m in Sources */,
 				A81441801E5C1F3300E95866 /* BaseViewController.m in Sources */,
 				A81441901E5C1FDC00E95866 /* BaseTabView.m in Sources */,
@@ -571,9 +587,11 @@
 				A81441AE1E5C211B00E95866 /* BaseViewModel.m in Sources */,
 				A81441AA1E5C20B700E95866 /* BaseRequest.m in Sources */,
 				A81441A51E5C208A00E95866 /* MBProgressHUD.m in Sources */,
+				A81441B81E5C249F00E95866 /* LoginViewController.m in Sources */,
 				A81441951E5C201000E95866 /* UIColor+Hex.m in Sources */,
 				A81441911E5C1FDC00E95866 /* RootView.m in Sources */,
 				A81441891E5C1FA000E95866 /* HomeView.m in Sources */,
+				A81441BB1E5C290C00E95866 /* RootTableViewCell.m in Sources */,
 				A81441A41E5C208A00E95866 /* MBProgressHUD+Add.m in Sources */,
 				A81441B11E5C214900E95866 /* HomeTableViewViewModel.m in Sources */,
 				A814413A1E5C1DDC00E95866 /* main.m in Sources */,
