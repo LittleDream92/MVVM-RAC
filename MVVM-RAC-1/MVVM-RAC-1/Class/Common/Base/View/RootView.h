@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "RootViewProtocol.h"
-#import "MFViewProtocol.h"
 
-@interface RootView : UIView<RootViewProtocol, MFViewProtocol>
+@interface RootView : UIView<RootViewProtocol, SAViewProtocol>
 
 @end

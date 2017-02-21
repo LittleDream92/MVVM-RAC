@@ -16,11 +16,14 @@
 #define  SCREEN_WIDTH   [[UIScreen mainScreen] bounds].size.width
 #define  SCREEN_HEIGHT  [[UIScreen mainScreen] bounds].size.height
 
+#define LoginViewControllerUrl @"dariel://LoginViewController"
+#define ThirdViewControllerUrl @"dariel://ThirdViewController"
+#define AopViewControllerUrl @"dariel://AOPViewController"
 
 
 #import "SDAutoLayout.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
-
+#import "SAMVVMUIKit.h"
 
 #import "UIColor+Hex.h"
 

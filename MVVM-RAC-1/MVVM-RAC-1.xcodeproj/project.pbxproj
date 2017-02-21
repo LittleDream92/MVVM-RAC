@@ -43,6 +43,11 @@
 		A81441B81E5C249F00E95866 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A81441B71E5C249F00E95866 /* LoginViewController.m */; };
 		A81441BB1E5C290C00E95866 /* RootTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A81441BA1E5C290C00E95866 /* RootTableViewCell.m */; };
 		A81441BE1E5C298700E95866 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A81441BD1E5C298700E95866 /* HomeTableViewCell.m */; };
+		A81441CA1E5C405100E95866 /* UITableViewCell+SAConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = A81441C51E5C405100E95866 /* UITableViewCell+SAConfigure.m */; };
+		A81441CB1E5C405100E95866 /* UIView+SAConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = A81441C71E5C405100E95866 /* UIView+SAConfigure.m */; };
+		A81441CC1E5C405100E95866 /* UIView+SAEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = A81441C91E5C405100E95866 /* UIView+SAEvents.m */; };
+		A81441D21E5C42D200E95866 /* LXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A81441CF1E5C42D200E95866 /* LXAlertView.m */; };
+		A81441D31E5C42D200E95866 /* UILabel+LXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A81441D11E5C42D200E95866 /* UILabel+LXAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,7 +96,6 @@
 		A81441991E5C208A00E95866 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
 		A814419A1E5C208A00E95866 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		A814419B1E5C208A00E95866 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		A814419D1E5C208A00E95866 /* MFViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFViewProtocol.h; sourceTree = "<group>"; };
 		A814419F1E5C208A00E95866 /* SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAutoLayout.h; sourceTree = "<group>"; };
 		A81441A01E5C208A00E95866 /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
 		A81441A11E5C208A00E95866 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
@@ -110,6 +114,20 @@
 		A81441BA1E5C290C00E95866 /* RootTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewCell.m; sourceTree = "<group>"; };
 		A81441BC1E5C298700E95866 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
 		A81441BD1E5C298700E95866 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		A81441C01E5C405100E95866 /* SAMVVMUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMVVMUIKit.h; sourceTree = "<group>"; };
+		A81441C11E5C405100E95866 /* SAViewManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAViewManagerProtocol.h; sourceTree = "<group>"; };
+		A81441C21E5C405100E95866 /* SAViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAViewModelProtocol.h; sourceTree = "<group>"; };
+		A81441C31E5C405100E95866 /* SAViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAViewProtocol.h; sourceTree = "<group>"; };
+		A81441C41E5C405100E95866 /* UITableViewCell+SAConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+SAConfigure.h"; sourceTree = "<group>"; };
+		A81441C51E5C405100E95866 /* UITableViewCell+SAConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+SAConfigure.m"; sourceTree = "<group>"; };
+		A81441C61E5C405100E95866 /* UIView+SAConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SAConfigure.h"; sourceTree = "<group>"; };
+		A81441C71E5C405100E95866 /* UIView+SAConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SAConfigure.m"; sourceTree = "<group>"; };
+		A81441C81E5C405100E95866 /* UIView+SAEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SAEvents.h"; sourceTree = "<group>"; };
+		A81441C91E5C405100E95866 /* UIView+SAEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SAEvents.m"; sourceTree = "<group>"; };
+		A81441CE1E5C42D200E95866 /* LXAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXAlertView.h; sourceTree = "<group>"; };
+		A81441CF1E5C42D200E95866 /* LXAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXAlertView.m; sourceTree = "<group>"; };
+		A81441D01E5C42D200E95866 /* UILabel+LXAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LXAdd.h"; sourceTree = "<group>"; };
+		A81441D11E5C42D200E95866 /* UILabel+LXAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LXAdd.m"; sourceTree = "<group>"; };
 		C8880BE7B8339C4502BD4867 /* Pods-MVVM-RAC-1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-RAC-1.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-RAC-1/Pods-MVVM-RAC-1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -335,8 +353,9 @@
 		A814415F1E5C1EDE00E95866 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				A81441CD1E5C42D200E95866 /* LXAlertView */,
+				A81441BF1E5C405100E95866 /* SAMVVMUIKit */,
 				A81441971E5C208A00E95866 /* MBProgressHUD */,
-				A814419C1E5C208A00E95866 /* MFMVVMUIKit */,
 				A814419E1E5C208A00E95866 /* SDAutoLayout */,
 			);
 			path = Vendor;
@@ -383,14 +402,6 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
-		A814419C1E5C208A00E95866 /* MFMVVMUIKit */ = {
-			isa = PBXGroup;
-			children = (
-				A814419D1E5C208A00E95866 /* MFViewProtocol.h */,
-			);
-			path = MFMVVMUIKit;
-			sourceTree = "<group>";
-		};
 		A814419E1E5C208A00E95866 /* SDAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +445,34 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A81441BF1E5C405100E95866 /* SAMVVMUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A81441C01E5C405100E95866 /* SAMVVMUIKit.h */,
+				A81441C11E5C405100E95866 /* SAViewManagerProtocol.h */,
+				A81441C21E5C405100E95866 /* SAViewModelProtocol.h */,
+				A81441C31E5C405100E95866 /* SAViewProtocol.h */,
+				A81441C41E5C405100E95866 /* UITableViewCell+SAConfigure.h */,
+				A81441C51E5C405100E95866 /* UITableViewCell+SAConfigure.m */,
+				A81441C61E5C405100E95866 /* UIView+SAConfigure.h */,
+				A81441C71E5C405100E95866 /* UIView+SAConfigure.m */,
+				A81441C81E5C405100E95866 /* UIView+SAEvents.h */,
+				A81441C91E5C405100E95866 /* UIView+SAEvents.m */,
+			);
+			path = SAMVVMUIKit;
+			sourceTree = "<group>";
+		};
+		A81441CD1E5C42D200E95866 /* LXAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				A81441CE1E5C42D200E95866 /* LXAlertView.h */,
+				A81441CF1E5C42D200E95866 /* LXAlertView.m */,
+				A81441D01E5C42D200E95866 /* UILabel+LXAdd.h */,
+				A81441D11E5C42D200E95866 /* UILabel+LXAdd.m */,
+			);
+			path = LXAlertView;
 			sourceTree = "<group>";
 		};
 		D9128E2CC06667AA64DD350E /* Frameworks */ = {
@@ -579,12 +618,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A81441D21E5C42D200E95866 /* LXAlertView.m in Sources */,
 				A81441BE1E5C298700E95866 /* HomeTableViewCell.m in Sources */,
+				A81441CC1E5C405100E95866 /* UIView+SAEvents.m in Sources */,
 				A814413D1E5C1DDC00E95866 /* AppDelegate.m in Sources */,
 				A81441801E5C1F3300E95866 /* BaseViewController.m in Sources */,
 				A81441901E5C1FDC00E95866 /* BaseTabView.m in Sources */,
 				A81441881E5C1FA000E95866 /* HomeTableView.m in Sources */,
 				A81441AE1E5C211B00E95866 /* BaseViewModel.m in Sources */,
+				A81441D31E5C42D200E95866 /* UILabel+LXAdd.m in Sources */,
 				A81441AA1E5C20B700E95866 /* BaseRequest.m in Sources */,
 				A81441A51E5C208A00E95866 /* MBProgressHUD.m in Sources */,
 				A81441B81E5C249F00E95866 /* LoginViewController.m in Sources */,
@@ -595,8 +637,10 @@
 				A81441A41E5C208A00E95866 /* MBProgressHUD+Add.m in Sources */,
 				A81441B11E5C214900E95866 /* HomeTableViewViewModel.m in Sources */,
 				A814413A1E5C1DDC00E95866 /* main.m in Sources */,
+				A81441CB1E5C405100E95866 /* UIView+SAConfigure.m in Sources */,
 				A81441A71E5C208A00E95866 /* UIView+SDAutoLayout.m in Sources */,
 				A81441A61E5C208A00E95866 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				A81441CA1E5C405100E95866 /* UITableViewCell+SAConfigure.m in Sources */,
 				A81441831E5C1F7D00E95866 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
