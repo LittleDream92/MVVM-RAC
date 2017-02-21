@@ -52,7 +52,11 @@
                 
             } else if (indexPath.row == 2) {
                 
-                
+                //第三方弹框
+                LXAlertView *alert=[[LXAlertView alloc] initWithTitle:@"提示" message:@"这是一个弹框" cancelBtnTitle:@"取消" otherBtnTitle:@"确定" clickIndexBlock:^(NSInteger clickIndex) {
+                    
+                }];
+                [alert showLXAlertView];
                 
             } else if (indexPath.row == 3) {
                 

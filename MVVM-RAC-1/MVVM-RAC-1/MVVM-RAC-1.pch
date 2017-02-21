@@ -24,6 +24,7 @@
 #import "SDAutoLayout.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "SAMVVMUIKit.h"
+#import "LXAlertView.h"
 
 #import "UIColor+Hex.h"
 
