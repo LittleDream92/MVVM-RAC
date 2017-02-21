@@ -1,0 +1,8 @@
+
+target ‘MVVM-RAC-1’ do
+
+pod 'ReactiveCocoa', '~> 2.5'
+pod 'AFNetworking', '~> 3.1.0'
+
+
+end
