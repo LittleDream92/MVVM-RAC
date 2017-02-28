@@ -1,0 +1,29 @@
+//
+//  Example.pch
+//  MVVM-RAC-1
+//
+//  Created by Meng Fan on 17/2/22.
+//  Copyright © 2017年 Meng Fan. All rights reserved.
+//
+
+#ifndef Example_pch
+#define Example_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
+
+
+#import "SDAutoLayout.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "DCURLRouter.h"
+#import "Aspects.h"
+
+#import "UIColor+Hex.h"
+
+#define AOPViewControllerURL @"dariel://Aopitem"
+#define RegViewControllerURL @"dariel://Regitem"
+
+#endif /* Example_pch */
