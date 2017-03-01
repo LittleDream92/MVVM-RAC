@@ -12,6 +12,8 @@
 		A87138DA1E60202F00C3D040 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87138D91E60202F00C3D040 /* LoginViewController.m */; };
 		A87138DD1E6020E000C3D040 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A87138DC1E6020E000C3D040 /* BaseViewModel.m */; };
 		A87138E11E6021AA00C3D040 /* HomeTableViewViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A87138E01E6021AA00C3D040 /* HomeTableViewViewModel.m */; };
+		A876435C1E667D9A0038BF4F /* LXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A87643591E667D9A0038BF4F /* LXAlertView.m */; };
+		A876435D1E667D9A0038BF4F /* UILabel+LXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A876435B1E667D9A0038BF4F /* UILabel+LXAdd.m */; };
 		A87E4EAD1E5E83780096734F /* AopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87E4EAC1E5E83780096734F /* AopViewController.m */; };
 		A87E4EB71E5E83F60096734F /* DCURLNavgation.m in Sources */ = {isa = PBXBuildFile; fileRef = A87E4EB11E5E83F60096734F /* DCURLNavgation.m */; };
 		A87E4EB81E5E83F60096734F /* DCURLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = A87E4EB31E5E83F60096734F /* DCURLRouter.m */; };
@@ -71,6 +73,10 @@
 		A87138DE1E6020EA00C3D040 /* BaseViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModelProtocol.h; sourceTree = "<group>"; };
 		A87138DF1E6021AA00C3D040 /* HomeTableViewViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewViewModel.h; sourceTree = "<group>"; };
 		A87138E01E6021AA00C3D040 /* HomeTableViewViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewViewModel.m; sourceTree = "<group>"; };
+		A87643581E667D9A0038BF4F /* LXAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXAlertView.h; sourceTree = "<group>"; };
+		A87643591E667D9A0038BF4F /* LXAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXAlertView.m; sourceTree = "<group>"; };
+		A876435A1E667D9A0038BF4F /* UILabel+LXAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LXAdd.h"; sourceTree = "<group>"; };
+		A876435B1E667D9A0038BF4F /* UILabel+LXAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LXAdd.m"; sourceTree = "<group>"; };
 		A87E4EAB1E5E83780096734F /* AopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AopViewController.h; sourceTree = "<group>"; };
 		A87E4EAC1E5E83780096734F /* AopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AopViewController.m; sourceTree = "<group>"; };
 		A87E4EAF1E5E83F60096734F /* DCSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSingleton.h; sourceTree = "<group>"; };
@@ -207,6 +213,17 @@
 				A805495C1E641B0C0037FBA1 /* LoginViewModel.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A87643571E667D9A0038BF4F /* LXAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				A87643581E667D9A0038BF4F /* LXAlertView.h */,
+				A87643591E667D9A0038BF4F /* LXAlertView.m */,
+				A876435A1E667D9A0038BF4F /* UILabel+LXAdd.h */,
+				A876435B1E667D9A0038BF4F /* UILabel+LXAdd.m */,
+			);
+			path = LXAlertView;
 			sourceTree = "<group>";
 		};
 		A87E4EAE1E5E83F60096734F /* DCURLRouter */ = {
@@ -449,6 +466,7 @@
 		A8909EDA1E5D90C400B26021 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				A87643571E667D9A0038BF4F /* LXAlertView */,
 				A89557B11E6570750003C073 /* Aspects */,
 				A87E4EAE1E5E83F60096734F /* DCURLRouter */,
 				A8909F071E5D962400B26021 /* SDAutoLayout */,
@@ -714,6 +732,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A876435D1E667D9A0038BF4F /* UILabel+LXAdd.m in Sources */,
 				A89557B01E656FDF0003C073 /* AspectCatModel.m in Sources */,
 				A87E4EB71E5E83F60096734F /* DCURLNavgation.m in Sources */,
 				A8909F0D1E5D962400B26021 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
@@ -723,6 +742,7 @@
 				A89557991E655B400003C073 /* MFTextField.m in Sources */,
 				A89557BB1E6570BD0003C073 /* BaseLogging.m in Sources */,
 				A87138DD1E6020E000C3D040 /* BaseViewModel.m in Sources */,
+				A876435C1E667D9A0038BF4F /* LXAlertView.m in Sources */,
 				A87E4F111E5ED22F0096734F /* BaseTableView.m in Sources */,
 				A89557901E652BAB0003C073 /* RegistViewController.m in Sources */,
 				A8909EB91E5D902800B26021 /* AppDelegate.m in Sources */,

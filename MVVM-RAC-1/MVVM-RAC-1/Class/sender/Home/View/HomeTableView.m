@@ -144,11 +144,20 @@
         NSLog(@"%ld _ %ld", (long)indexPath.section, (long)indexPath.row);
         if (indexPath.section == 0) {
             if (indexPath.row == 0) {
-                NSLog(@"0 __ 0");
+                
                 [DCURLRouter pushURLString:LoginViewControllerURL animated:YES];
+                
             } else if(indexPath.row == 1) {
-                NSLog(@"0 _ 1");
+                
                 [DCURLRouter pushURLString:ChangeViewControllerURl animated:YES];
+                
+            } else if (indexPath.row == 2) {
+                
+                 LXAlertView *alert = [[LXAlertView alloc] initWithTitle:@"提示" message:@"This is a alertView" cancelBtnTitle:@"取消" otherBtnTitle:@"确定" clickIndexBlock:^(NSInteger clickIndex) {
+                     NSLog(@"您点击了确定");
+                }];
+                [alert showLXAlertView];
+                
             }
         } else if (indexPath.section == 1) {
             
