@@ -16,8 +16,9 @@
 
 @implementation BaseTableView
 
--(instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
+-(instancetype)init {
+    self = [super init];
+    
     if (self) {
         [self addChildView];
     }
