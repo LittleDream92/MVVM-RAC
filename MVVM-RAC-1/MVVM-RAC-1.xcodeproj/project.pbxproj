@@ -14,6 +14,7 @@
 		A87138E11E6021AA00C3D040 /* HomeTableViewViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A87138E01E6021AA00C3D040 /* HomeTableViewViewModel.m */; };
 		A876435C1E667D9A0038BF4F /* LXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A87643591E667D9A0038BF4F /* LXAlertView.m */; };
 		A876435D1E667D9A0038BF4F /* UILabel+LXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A876435B1E667D9A0038BF4F /* UILabel+LXAdd.m */; };
+		A87643601E669FB20038BF4F /* RACWithKVOView.m in Sources */ = {isa = PBXBuildFile; fileRef = A876435F1E669FB20038BF4F /* RACWithKVOView.m */; };
 		A87E4EAD1E5E83780096734F /* AopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87E4EAC1E5E83780096734F /* AopViewController.m */; };
 		A87E4EB71E5E83F60096734F /* DCURLNavgation.m in Sources */ = {isa = PBXBuildFile; fileRef = A87E4EB11E5E83F60096734F /* DCURLNavgation.m */; };
 		A87E4EB81E5E83F60096734F /* DCURLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = A87E4EB31E5E83F60096734F /* DCURLRouter.m */; };
@@ -77,6 +78,8 @@
 		A87643591E667D9A0038BF4F /* LXAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXAlertView.m; sourceTree = "<group>"; };
 		A876435A1E667D9A0038BF4F /* UILabel+LXAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LXAdd.h"; sourceTree = "<group>"; };
 		A876435B1E667D9A0038BF4F /* UILabel+LXAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LXAdd.m"; sourceTree = "<group>"; };
+		A876435E1E669FB20038BF4F /* RACWithKVOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACWithKVOView.h; sourceTree = "<group>"; };
+		A876435F1E669FB20038BF4F /* RACWithKVOView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACWithKVOView.m; sourceTree = "<group>"; };
 		A87E4EAB1E5E83780096734F /* AopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AopViewController.h; sourceTree = "<group>"; };
 		A87E4EAC1E5E83780096734F /* AopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AopViewController.m; sourceTree = "<group>"; };
 		A87E4EAF1E5E83F60096734F /* DCSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSingleton.h; sourceTree = "<group>"; };
@@ -575,6 +578,8 @@
 		A89557BF1E6575810003C073 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A876435E1E669FB20038BF4F /* RACWithKVOView.h */,
+				A876435F1E669FB20038BF4F /* RACWithKVOView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -754,6 +759,7 @@
 				A87E4F0D1E5ED2250096734F /* HomeTableView.m in Sources */,
 				A8909EB61E5D902800B26021 /* main.m in Sources */,
 				A89557BA1E6570BD0003C073 /* AppDelegate+Logging.m in Sources */,
+				A87643601E669FB20038BF4F /* RACWithKVOView.m in Sources */,
 				A89557C31E6575EB0003C073 /* ChangeViewController.m in Sources */,
 				A8909F061E5D94B900B26021 /* HomeView.m in Sources */,
 				A8909EFF1E5D91C300B26021 /* HomeViewController.m in Sources */,

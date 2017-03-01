@@ -149,15 +149,17 @@
                 
             } else if(indexPath.row == 1) {
                 
-                [DCURLRouter pushURLString:ChangeViewControllerURl animated:YES];
+                [DCURLRouter pushURLString:[NSString stringWithFormat:@"%@?title=点击", ChangeViewControllerURl] animated:YES];
                 
             } else if (indexPath.row == 2) {
                 
-                 LXAlertView *alert = [[LXAlertView alloc] initWithTitle:@"提示" message:@"This is a alertView" cancelBtnTitle:@"取消" otherBtnTitle:@"确定" clickIndexBlock:^(NSInteger clickIndex) {
-                     NSLog(@"您点击了确定");
+                [DCURLRouter pushURLString:[NSString stringWithFormat:@"%@?title=合并", ChangeViewControllerURl] animated:YES];
+                
+            } else if (indexPath.row == 3) {
+                LXAlertView *alert = [[LXAlertView alloc] initWithTitle:@"提示" message:@"This is a alertView" cancelBtnTitle:@"取消" otherBtnTitle:@"确定" clickIndexBlock:^(NSInteger clickIndex) {
+                    NSLog(@"您点击了确定");
                 }];
                 [alert showLXAlertView];
-                
             }
         } else if (indexPath.section == 1) {
             
