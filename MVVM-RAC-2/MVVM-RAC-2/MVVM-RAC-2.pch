@@ -9,7 +9,37 @@
 #ifndef MVVM_RAC_2_pch
 #define MVVM_RAC_2_pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//第三方
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <AFNetworking/AFNetworking.h>
+#import <Masonry/Masonry.h>
+#import <MJRefresh/MJRefresh.h>
+#import <MJExtension/MJExtension.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import "UIImageView+WebCache.h"
+#import "UIScrollView+EmptyDataSet.h"       //DZNEmptyDataSet
+#import "IQKeyBoardManager.h"
+
+
+//宏
+#import "NMFColorHeader.h"
+#import "NMFMacro.h"
+#import "NMFURLMacro.h"
+
+
+//类别
+#import "UIButton+NMFBtn.h"
+#import "UIColor+Hex.h"
+#import "UIFont+NMF.h"
+#import "UILabel+NMF.h"
+#import "UITextField+NMF.h"
+#import "UIImage+NMF.h"
+
+
+
+#import "NMFBaseViewModel.h"
+
+
 
 #endif /* MVVM_RAC_2_pch */

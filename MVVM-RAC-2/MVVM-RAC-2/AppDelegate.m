@@ -6,7 +6,11 @@
 //  Copyright © 2017年 Meng Fan. All rights reserved.
 //
 
+
+//本文仿写地址：https://github.com/wangtongke/WTKMVVMRAC
+
 #import "AppDelegate.h"
+#import "RootViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +20,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+    [self setupRootViewController];
+
+    
     return YES;
 }
 
@@ -45,6 +53,18 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+#pragma mark - rootController
+- (void)setupRootViewController {
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    RootViewController *rootVC = [[RootViewController alloc] init];
+    self.window.rootViewController = rootVC;
+    
 }
 
 
