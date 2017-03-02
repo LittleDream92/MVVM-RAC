@@ -35,10 +35,10 @@
 #pragma mark - 加载子控制器
 - (void)addChildVC {
     
-    NMFHomeViewController *homeVC = [[NMFHomeViewController alloc] initWithViewModel:[[NMFHomeViewModel alloc] initWithService:nil params:@{@"title": @"首页"}]];
+    NMFHomeViewController *homeVC = [[NMFHomeViewController alloc] initWithViewModel:[[NMFHomeViewModel alloc] initWithService:nil params:@{@"title": @"homey"}]];
     NMFNavigationController *nav1 = [self setChildVC:homeVC title:@"首页" imageName:@"homeNormal" withSelectedName:@"homeHight"];
     
-    NMFCategoryViewController *categoryVC = [[NMFCategoryViewController alloc] initWithViewModel:[[NMFCategoryViewModel alloc] initWithService:nil params:@{@"title":@"分类"}]];
+    NMFCategoryViewController *categoryVC = [[NMFCategoryViewController alloc] initWithViewModel:[[NMFCategoryViewModel alloc] initWithService:nil params:@{@"title":@"categorys"}]];
     NMFNavigationController *nav2 = [self setChildVC:categoryVC title:@"分类" imageName:@"categoryNormal" withSelectedName:@"categoryHight"];
     
     NMFFoundViewController *foundVC = [[NMFFoundViewController alloc] initWithViewModel:[[NMFFoundViewModel alloc] initWithService:nil params:@{@"title": @"发现"}]];

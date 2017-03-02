@@ -14,4 +14,7 @@
 //自定义初始化方法
 - (instancetype)initWithViewModel:(NMFBaseViewModel *)viewModel;
 
+//绑定ViewModel
+- (void)bindViewModel;
+
 @end

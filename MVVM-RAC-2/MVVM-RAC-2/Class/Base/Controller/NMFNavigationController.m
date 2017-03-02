@@ -22,7 +22,7 @@
     self.delegate = self;
     
     //设置导航栏字体（全局）
-    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
+    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor blackColor]};
 }
 
 /** 导航栏 */

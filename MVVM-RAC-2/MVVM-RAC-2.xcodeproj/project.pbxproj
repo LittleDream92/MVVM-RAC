@@ -46,6 +46,8 @@
 		A8D726241E67FF13004686B6 /* UILabel+NMF.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D726231E67FF13004686B6 /* UILabel+NMF.m */; };
 		A8D726271E6800A0004686B6 /* UITextField+NMF.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D726261E6800A0004686B6 /* UITextField+NMF.m */; };
 		A8D7262A1E680243004686B6 /* UIImage+NMF.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D726291E680243004686B6 /* UIImage+NMF.m */; };
+		A8D7262E1E680AB3004686B6 /* NMFMeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D7262C1E680AB3004686B6 /* NMFMeTableViewCell.m */; };
+		A8D7262F1E680AB3004686B6 /* NMFMeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8D7262D1E680AB3004686B6 /* NMFMeTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,6 +135,9 @@
 		A8D726261E6800A0004686B6 /* UITextField+NMF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+NMF.m"; sourceTree = "<group>"; };
 		A8D726281E680243004686B6 /* UIImage+NMF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NMF.h"; sourceTree = "<group>"; };
 		A8D726291E680243004686B6 /* UIImage+NMF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NMF.m"; sourceTree = "<group>"; };
+		A8D7262B1E680AB3004686B6 /* NMFMeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMFMeTableViewCell.h; sourceTree = "<group>"; };
+		A8D7262C1E680AB3004686B6 /* NMFMeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMFMeTableViewCell.m; sourceTree = "<group>"; };
+		A8D7262D1E680AB3004686B6 /* NMFMeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NMFMeTableViewCell.xib; sourceTree = "<group>"; };
 		C42926175161F9CE45AB96A1 /* Pods-MVVM-RAC-2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-RAC-2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-RAC-2/Pods-MVVM-RAC-2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -627,6 +632,9 @@
 		A87643EE1E66C82B0038BF4F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A8D7262B1E680AB3004686B6 /* NMFMeTableViewCell.h */,
+				A8D7262C1E680AB3004686B6 /* NMFMeTableViewCell.m */,
+				A8D7262D1E680AB3004686B6 /* NMFMeTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -741,6 +749,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A876439A1E66C1C10038BF4F /* LaunchScreen.storyboard in Resources */,
+				A8D7262F1E680AB3004686B6 /* NMFMeTableViewCell.xib in Resources */,
 				A87643971E66C1C10038BF4F /* Assets.xcassets in Resources */,
 				A84DD56C1E67F62D00650EE4 /* IQKeyboardManager.bundle in Resources */,
 			);
@@ -806,6 +815,7 @@
 				A84DD51B1E67B6FE00650EE4 /* BaseViewController.m in Sources */,
 				A87644031E66CAB90038BF4F /* NMFFoundViewController.m in Sources */,
 				A84DD52B1E67BB6400650EE4 /* NMFFoundViewModel.m in Sources */,
+				A8D7262E1E680AB3004686B6 /* NMFMeTableViewCell.m in Sources */,
 				A84DD5641E67F62D00650EE4 /* IQKeyboardManager.m in Sources */,
 				A84DD5651E67F62D00650EE4 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				A84DD55F1E67F62D00650EE4 /* IQNSArray+Sort.m in Sources */,

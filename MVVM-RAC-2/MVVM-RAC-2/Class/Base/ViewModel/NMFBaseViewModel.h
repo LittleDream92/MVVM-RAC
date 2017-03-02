@@ -11,7 +11,7 @@
 
 @interface NMFBaseViewModel : NSObject
 
-
+@property (nonatomic, copy) NSString *title;
 
 /** 自定义初始化方法 */
 - (instancetype)initWithService:(id<NMFViewModelServices>)service params:(NSDictionary *)params;
