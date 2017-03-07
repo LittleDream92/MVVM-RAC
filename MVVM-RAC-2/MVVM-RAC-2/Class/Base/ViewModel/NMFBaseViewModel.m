@@ -7,6 +7,7 @@
 //
 
 #import "NMFBaseViewModel.h"
+#import "NMFLoginViewModel.h"
 
 @interface NMFBaseViewModel ()
 
@@ -29,6 +30,30 @@
         self.params = params;
     }
     return self;
+}
+
+
+/**
+ 判断是否登陆
+ 
+ @param goGoLogin 如果没有登录，是否跳转登录页面
+ @return 是否登陆
+ */
+- (BOOL)judgeWhetherLogin:(BOOL)goGoLogin {
+    if ([NMFUser currentUser].isLogin) {
+        return YES;
+    }
+    
+    if (goGoLogin) {
+        
+        NSLog(@"去登陆");
+        //push进去登录VC
+        NMFLoginViewModel *viewModel = [[NMFLoginViewModel alloc] initWithService:self.services params:@{@"title":@"登陆"}];
+        
+        
+    }
+    
+    return NO;
 }
 
 @end

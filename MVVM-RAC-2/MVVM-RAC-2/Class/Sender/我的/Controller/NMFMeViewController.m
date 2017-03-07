@@ -7,6 +7,7 @@
 //
 
 #import "NMFMeViewController.h"
+#import "NMFMeHeaderView.h"
 #import "NMFMeTableViewCell.h"
 
 #define FOOT_ID1 @"FOOT1"
@@ -15,6 +16,9 @@
 @interface NMFMeViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
+
+//头视图
+@property (nonatomic, strong) NMFMeHeaderView *headView;
 
 @property (nonatomic, strong) NSArray *titleArray;
 
@@ -37,6 +41,9 @@
     self.tableView.dataSource = self;
 
     _titleArray = @[@"推荐有奖",@"意见反馈",@"客服热线",@"酒运达"];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"NMFMeTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"cell"];
+    self.tableView.tableHeaderView = self.headView;
 }
 
 #pragma mark - UITableViewDataSource
@@ -49,14 +56,8 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *identifier = @"cell";
-    NMFMeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     
-    
-    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"NMFMeTableViewCell" owner:self options:nil] lastObject];
-    }
+    NMFMeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
     
     if (indexPath.section == 0) {
@@ -131,6 +132,14 @@
         
     }
     return _tableView;
+}
+
+
+-(NMFMeHeaderView *)headView {
+    if (!_headView) {
+        _headView = [[NMFMeHeaderView alloc] initWithFrame:CGRectMake(0, 0, kWidth, 200)];
+    }
+    return _headView;
 }
 
 

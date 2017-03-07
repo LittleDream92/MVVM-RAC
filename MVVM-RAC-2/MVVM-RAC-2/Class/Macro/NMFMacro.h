@@ -19,5 +19,9 @@
 //UserDefaults
 #define USER_DEFAULTS [NSUserDefaults standardUserDefaults]
 
+#define CURRENT_USER [NMFUser currentUser]
+
+#import "NMFUser.h"
+
 
 #endif /* NMFMacro_h */

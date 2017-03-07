@@ -16,4 +16,14 @@
 /** 自定义初始化方法 */
 - (instancetype)initWithService:(id<NMFViewModelServices>)service params:(NSDictionary *)params;
 
+
+
+ /**
+  判断是否登陆
+
+  @param goGoLogin 如果没有登录，是否跳转登录页面
+  @return 是否登陆
+  */
+- (BOOL)judgeWhetherLogin:(BOOL)goGoLogin;
+
 @end
