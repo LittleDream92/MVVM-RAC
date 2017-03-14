@@ -10,7 +10,13 @@
 
 @interface NMFMeViewModel : NMFBaseViewModel
 
+/** cell点击 */
+@property (nonatomic, strong) RACSubject *cellClickSubject;
 
+/** head点击 */
+@property (nonatomic, strong) RACSubject *headClickSubject;
 
+/** 设置按钮点击 */
+@property (nonatomic, strong) RACSubject *settingSubject;
 
 @end
