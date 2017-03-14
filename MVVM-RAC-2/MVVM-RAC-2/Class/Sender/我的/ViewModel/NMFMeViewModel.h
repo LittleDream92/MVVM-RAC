@@ -10,4 +10,7 @@
 
 @interface NMFMeViewModel : NMFBaseViewModel
 
+
+
+
 @end

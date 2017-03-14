@@ -11,6 +11,16 @@
 @class NMFBaseViewModel;
 @protocol NMFViewModelServices <NSObject>
 
+//push 和 pop
 - (void)pushViewModel:(NMFBaseViewModel *)viewModel animated:(BOOL)animated;
+
+- (void)popViewControllerWithAnimation:(BOOL)animated;
+
+- (void)popToRootViewModelWithAnimation:(BOOL)animated;
+
+- (void)presentViewModel:(NMFBaseViewModel *)viewModel animated:(BOOL)animated complete:(void(^)())complete;
+
+//模态弹出VC，用于alert
+- (void)presentViewController:(UIViewController *)viewController animated:(BOOL)animated complete:(void(^)())complete;
 
 @end

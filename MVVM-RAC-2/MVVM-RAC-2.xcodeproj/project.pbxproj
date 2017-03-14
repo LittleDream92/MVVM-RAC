@@ -35,6 +35,7 @@
 		A865FCBB1E6E529100A20DFF /* NMFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A865FCBA1E6E529100A20DFF /* NMFUser.m */; };
 		A865FCBE1E6E54ED00A20DFF /* NMFAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = A865FCBD1E6E54ED00A20DFF /* NMFAddress.m */; };
 		A865FCC11E6E608300A20DFF /* NMFLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A865FCC01E6E608300A20DFF /* NMFLoginViewModel.m */; };
+		A865FCC41E6E62F000A20DFF /* NMFViewModelNavigationImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A865FCC31E6E62F000A20DFF /* NMFViewModelNavigationImpl.m */; };
 		A876438C1E66C1C10038BF4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A876438B1E66C1C10038BF4F /* main.m */; };
 		A876438F1E66C1C10038BF4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A876438E1E66C1C10038BF4F /* AppDelegate.m */; };
 		A87643971E66C1C10038BF4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A87643961E66C1C10038BF4F /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		A8D7262A1E680243004686B6 /* UIImage+NMF.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D726291E680243004686B6 /* UIImage+NMF.m */; };
 		A8D7262E1E680AB3004686B6 /* NMFMeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D7262C1E680AB3004686B6 /* NMFMeTableViewCell.m */; };
 		A8D7262F1E680AB3004686B6 /* NMFMeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8D7262D1E680AB3004686B6 /* NMFMeTableViewCell.xib */; };
+		A8F2BA1A1E77C31C0039DDF9 /* MeBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F2BA191E77C31C0039DDF9 /* MeBtn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +119,8 @@
 		A865FCBD1E6E54ED00A20DFF /* NMFAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMFAddress.m; sourceTree = "<group>"; };
 		A865FCBF1E6E608300A20DFF /* NMFLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMFLoginViewModel.h; sourceTree = "<group>"; };
 		A865FCC01E6E608300A20DFF /* NMFLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMFLoginViewModel.m; sourceTree = "<group>"; };
+		A865FCC21E6E62F000A20DFF /* NMFViewModelNavigationImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMFViewModelNavigationImpl.h; sourceTree = "<group>"; };
+		A865FCC31E6E62F000A20DFF /* NMFViewModelNavigationImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMFViewModelNavigationImpl.m; sourceTree = "<group>"; };
 		A87643871E66C1C10038BF4F /* MVVM-RAC-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-RAC-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A876438B1E66C1C10038BF4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A876438D1E66C1C10038BF4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 		A8D7262B1E680AB3004686B6 /* NMFMeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMFMeTableViewCell.h; sourceTree = "<group>"; };
 		A8D7262C1E680AB3004686B6 /* NMFMeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMFMeTableViewCell.m; sourceTree = "<group>"; };
 		A8D7262D1E680AB3004686B6 /* NMFMeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NMFMeTableViewCell.xib; sourceTree = "<group>"; };
+		A8F2BA181E77C31C0039DDF9 /* MeBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeBtn.h; sourceTree = "<group>"; };
+		A8F2BA191E77C31C0039DDF9 /* MeBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeBtn.m; sourceTree = "<group>"; };
 		C42926175161F9CE45AB96A1 /* Pods-MVVM-RAC-2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-RAC-2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-RAC-2/Pods-MVVM-RAC-2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,6 +213,8 @@
 				A84DD51F1E67B72400650EE4 /* NMFBaseViewModel.h */,
 				A84DD5201E67B72400650EE4 /* NMFBaseViewModel.m */,
 				A84DD5251E67B94900650EE4 /* NMFViewModelServices.h */,
+				A865FCC21E6E62F000A20DFF /* NMFViewModelNavigationImpl.h */,
+				A865FCC31E6E62F000A20DFF /* NMFViewModelNavigationImpl.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -661,6 +669,8 @@
 				A8D7262D1E680AB3004686B6 /* NMFMeTableViewCell.xib */,
 				A8D05EAE1E6D3E88008B251B /* NMFMeHeaderView.h */,
 				A8D05EAF1E6D3E88008B251B /* NMFMeHeaderView.m */,
+				A8F2BA181E77C31C0039DDF9 /* MeBtn.h */,
+				A8F2BA191E77C31C0039DDF9 /* MeBtn.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -840,6 +850,7 @@
 			files = (
 				A8D7262A1E680243004686B6 /* UIImage+NMF.m in Sources */,
 				A87644091E66CB100038BF4F /* NMFShoppingCartViewController.m in Sources */,
+				A865FCC41E6E62F000A20DFF /* NMFViewModelNavigationImpl.m in Sources */,
 				A84DD51B1E67B6FE00650EE4 /* BaseViewController.m in Sources */,
 				A8D05EB01E6D3E88008B251B /* NMFMeHeaderView.m in Sources */,
 				A865FCC11E6E608300A20DFF /* NMFLoginViewModel.m in Sources */,
@@ -855,6 +866,7 @@
 				A8D726211E67FCAA004686B6 /* UIFont+NMF.m in Sources */,
 				A8D726271E6800A0004686B6 /* UITextField+NMF.m in Sources */,
 				A84DD5621E67F62D00650EE4 /* IQUIViewController+Additions.m in Sources */,
+				A8F2BA1A1E77C31C0039DDF9 /* MeBtn.m in Sources */,
 				A84DD51C1E67B6FE00650EE4 /* NMFNavigationController.m in Sources */,
 				A84DD5601E67F62D00650EE4 /* IQUITextFieldView+Additions.m in Sources */,
 				A8D7261E1E67FA80004686B6 /* UIColor+Hex.m in Sources */,

@@ -9,6 +9,7 @@
 #import "NMFMeViewController.h"
 #import "NMFMeHeaderView.h"
 #import "NMFMeTableViewCell.h"
+#import "MeBtn.h"
 
 #define FOOT_ID1 @"FOOT1"
 #define FOOT_ID2 @"FOOT2"
@@ -104,8 +105,26 @@
             CGFloat width   = kWidth / 4.0;
             @weakify(self);
             [titleLabelArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                
+                MeBtn *btn = [MeBtn buttonWithTitle:obj imageName:imgArray[idx]];
+                btn.tag = idx;
+                [btn setFrame:CGRectMake(idx * width, 0, width, height)];
+                //action
+                [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+                    
+//                    @strongify(self);
+                    NSLog(@"click btn");
+                    
+                }];
+                [footView addSubview:btn];
+                if (idx == 3 && section == 0) {
+                    btn.bageValue = 2;
+                }
             }];
+            
+            //假的section 分割View
+            UIView *bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, 79.4, kWidth, 15.6)];
+            bottomView.backgroundColor = BASE_COLOR;
+            [footView addSubview:bottomView];
         }
     }
     
@@ -123,12 +142,33 @@
 }
 
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 2) {
+        //        客服热线
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"拨打" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            NSURL *url = [NSURL URLWithString:@"telprompt://10086"];
+            [[UIApplication sharedApplication] openURL:url];
+        }];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"客服热线" message:@"全国客服热线：10086" preferredStyle:UIAlertControllerStyleActionSheet];
+        [alert addAction:action];
+        [alert addAction:cancelAction];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.05 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    });
+}
+
 #pragma mark - lazyLoading
 -(UITableView *)tableView {
     if (!_tableView) {
         
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kWidth, kHeight-49) style:UITableViewStyleGrouped];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.backgroundColor = [UIColor whiteColor];
         
     }
     return _tableView;
