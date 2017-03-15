@@ -13,7 +13,7 @@
 /** cell点击 */
 @property (nonatomic, strong) RACSubject *cellClickSubject;
 
-/** head点击 */
+/** head点击(订单和钱包那8个按钮) */
 @property (nonatomic, strong) RACSubject *headClickSubject;
 
 /** 设置按钮点击 */

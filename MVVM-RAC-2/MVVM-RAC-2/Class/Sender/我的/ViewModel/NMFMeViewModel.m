@@ -43,6 +43,18 @@
                 DISMISS_SVP(1.2);
             }
                 break;
+            case 8:
+            {
+                //点击头像
+                if ([self judgeWhetherLogin:YES]) {
+                    
+                    NSLog(@"yes");
+                    
+                } else {
+                    NSLog(@"no");
+                }
+            }
+                break;
             case 9:
             {
                 //收藏
@@ -57,7 +69,7 @@
             default:
             {
                 //订单
-                
+                NSLog(@"要push订单啦！");
             }
                 break;
         }

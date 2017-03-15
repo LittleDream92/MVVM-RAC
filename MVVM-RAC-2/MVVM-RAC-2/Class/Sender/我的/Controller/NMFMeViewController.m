@@ -21,16 +21,47 @@
 //头视图
 @property (nonatomic, strong) NMFMeHeaderView *headView;
 
+/** 设置按钮 */
+@property (nonatomic, strong) UIButton *setBtn;
+
 @property (nonatomic, strong) NSArray *titleArray;
+
+@property (nonatomic, assign) BOOL dismissFlag;
+
+//viewModel
+@property (nonatomic, strong) NMFMeViewModel *viewModel;
 
 @end
 
 @implementation NMFMeViewController
 
+#pragma mark - lifeCycle
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    self.dismissFlag = NO;
+    self.tableView.contentOffset = CGPointMake(self.tableView.contentOffset.x, self.tableView.contentOffset.y + 0.02);
+    [self.tableView reloadData];
+    [_headView upDate];
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    self.dismissFlag = YES;
+    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageFromColor:NMFCOLOR(255, 255, 255, 0.99)] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = nil;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    [self bindViewModel];
     [self setupViews];
+    [self resetNavi];
 }
 
 
@@ -46,6 +77,78 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"NMFMeTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"cell"];
     self.tableView.tableHeaderView = self.headView;
 }
+
+- (void)resetNavi {
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    [self.setBtn setBackgroundImage:[UIImage imageNamed:@"w_shezhi"] forState:UIControlStateNormal];
+    self.setBtn.frame = CGRectMake(0, 0, 25, 23);
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.setBtn];
+}
+
+
+/** 滑动tableView，更新导航栏 */
+- (void)updateNavi:(id)x {
+    if (self.dismissFlag) {
+        return;
+    }
+    
+    CGPoint point = [x CGPointValue];
+    CGFloat y = point.y;
+    if (y < 0)
+    {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+        self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
+    }
+    else
+    {
+        [self.navigationController setNavigationBarHidden:NO animated:YES];
+        self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    }
+    
+    if (y >= 0)
+    {
+        float a = y / kWidth / 0.23 > 0.9 ? 0.9 : y / kWidth / 0.23;
+        NSLog(@"%f",a);
+        self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:NMFCOLOR(70, 70, 70, a)};
+        if (a < 0.9 && a >= 0)
+        {
+            NSLog(@"11111");
+            [self.navigationController.navigationBar setBackgroundImage:[UIImage imageFromColor:NMFCOLOR(255, 255, 255, a)] forBarMetrics:UIBarMetricsDefault];
+        }
+        if (a < 0.5)
+        {
+            NSLog(@"22222");
+            self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+            [self.setBtn setBackgroundImage:[UIImage imageNamed:@"w_shezhi"] forState:UIControlStateNormal];
+        }
+        else
+        {
+            NSLog(@"333333");
+            self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
+            [self.setBtn setBackgroundImage:[UIImage imageNamed:@"w_shezhih"] forState:UIControlStateNormal];
+        }
+    }
+
+}
+
+
+/** 绑定View Model */
+- (void)bindViewModel {
+    [super bindViewModel];
+    
+    @weakify(self);
+    [RACObserve(self.tableView, contentOffset) subscribeNext:^(id x) {
+        @strongify(self);
+        [self updateNavi:x];
+    }];
+    
+    [[self.setBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        @strongify(self);
+        [self.viewModel.settingSubject sendNext:x];
+    }];
+
+}
+
 
 #pragma mark - UITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -111,8 +214,8 @@
                 //action
                 [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
                     
-//                    @strongify(self);
-                    NSLog(@"click btn");
+                    @strongify(self);
+                    [self.viewModel.headClickSubject sendNext:@(idx + section * 4)];
                     
                 }];
                 [footView addSubview:btn];
@@ -180,6 +283,13 @@
         _headView = [[NMFMeHeaderView alloc] initWithFrame:CGRectMake(0, 0, kWidth, 200)];
     }
     return _headView;
+}
+
+-(UIButton *)setBtn {
+    if (!_setBtn) {
+        _setBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    }
+    return _setBtn;
 }
 
 
