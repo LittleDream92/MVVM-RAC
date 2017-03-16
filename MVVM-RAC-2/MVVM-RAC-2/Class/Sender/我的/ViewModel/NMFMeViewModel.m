@@ -8,6 +8,9 @@
 
 #import "NMFMeViewModel.h"
 
+//push  到 setting controller
+#import "NMFSettingViewModel.h"
+
 @implementation NMFMeViewModel
 
 -(instancetype)initWithService:(id<NMFViewModelServices>)service params:(NSDictionary *)params
@@ -78,7 +81,10 @@
     /** 设置按钮点击 */
     self.settingSubject = [RACSubject subject];
     [self.settingSubject subscribeNext:^(id x) {
-        
+        NSLog(@"设置");
+        NMFSettingViewModel *viewModel = [[NMFSettingViewModel alloc] initWithService:self.services params:@{@"title":@"设置"}];
+        self.naviImpl.className = @"SettingViewController";
+        [self.naviImpl pushViewModel:viewModel animated:YES];
     }];
     
 }

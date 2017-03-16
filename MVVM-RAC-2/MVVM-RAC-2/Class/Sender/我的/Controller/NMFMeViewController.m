@@ -62,6 +62,13 @@
     [self bindViewModel];
     [self setupViews];
     [self resetNavi];
+    
+//    通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cancelPop) name:@"nmf_cancelPop" object:nil];
+}
+
+- (void)cancelPop {
+    [self resetNavi];
 }
 
 
@@ -79,6 +86,7 @@
 }
 
 - (void)resetNavi {
+    
     self.navigationController.navigationBar.shadowImage = [UIImage new];
     [self.setBtn setBackgroundImage:[UIImage imageNamed:@"w_shezhi"] forState:UIControlStateNormal];
     self.setBtn.frame = CGRectMake(0, 0, 25, 23);

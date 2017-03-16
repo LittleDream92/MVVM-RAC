@@ -8,10 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "NMFViewModelServices.h"
+#import "NMFViewModelNavigationImpl.h"
 
 @interface NMFBaseViewModel : NSObject
 
 @property (nonatomic, copy) NSString *title;
+
+@property(nonatomic,strong,readonly)id<NMFViewModelServices> services;
+@property(nonatomic,strong)NMFViewModelNavigationImpl *naviImpl;
+@property (nonatomic, copy, readonly) NSDictionary *params;
 
 /** 自定义初始化方法 */
 - (instancetype)initWithService:(id<NMFViewModelServices>)service params:(NSDictionary *)params;
