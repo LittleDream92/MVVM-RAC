@@ -55,12 +55,16 @@
 		A85988541EA4ACC00062A5A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85988531EA4ACC00062A5A3 /* CoreGraphics.framework */; };
 		A85988561EA4ACC60062A5A3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85988551EA4ACC60062A5A3 /* Security.framework */; };
 		A85988581EA4ACD10062A5A3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85988571EA4ACD10062A5A3 /* CoreTelephony.framework */; };
+		A859885A1EA4AD870062A5A3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A85988591EA4AD870062A5A3 /* libz.tbd */; };
+		A85988601EA4B2400062A5A3 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A859885D1EA4B2400062A5A3 /* DataManager.m */; };
+		A85988611EA4B2400062A5A3 /* ShoppingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A859885F1EA4B2400062A5A3 /* ShoppingManager.m */; };
+		A85988691EA4B2830062A5A3 /* Good.m in Sources */ = {isa = PBXBuildFile; fileRef = A85988651EA4B2830062A5A3 /* Good.m */; };
 		A865FCBB1E6E529100A20DFF /* NMFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A865FCBA1E6E529100A20DFF /* NMFUser.m */; };
 		A865FCBE1E6E54ED00A20DFF /* NMFAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = A865FCBD1E6E54ED00A20DFF /* NMFAddress.m */; };
 		A865FCC11E6E608300A20DFF /* NMFLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A865FCC01E6E608300A20DFF /* NMFLoginViewModel.m */; };
 		A865FCC41E6E62F000A20DFF /* NMFViewModelNavigationImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A865FCC31E6E62F000A20DFF /* NMFViewModelNavigationImpl.m */; };
 		A876438C1E66C1C10038BF4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A876438B1E66C1C10038BF4F /* main.m */; };
-		A876438F1E66C1C10038BF4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A876438E1E66C1C10038BF4F /* AppDelegate.m */; };
+		A876438F1E66C1C10038BF4F /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = A876438E1E66C1C10038BF4F /* AppDelegate.mm */; };
 		A87643971E66C1C10038BF4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A87643961E66C1C10038BF4F /* Assets.xcassets */; };
 		A876439A1E66C1C10038BF4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87643981E66C1C10038BF4F /* LaunchScreen.storyboard */; };
 		A87644001E66CA950038BF4F /* NMFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87643FF1E66CA950038BF4F /* NMFHomeViewController.m */; };
@@ -166,6 +170,13 @@
 		A85988531EA4ACC00062A5A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A85988551EA4ACC60062A5A3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A85988571EA4ACD10062A5A3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A85988591EA4AD870062A5A3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A859885C1EA4B2400062A5A3 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		A859885D1EA4B2400062A5A3 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		A859885E1EA4B2400062A5A3 /* ShoppingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingManager.h; sourceTree = "<group>"; };
+		A859885F1EA4B2400062A5A3 /* ShoppingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingManager.m; sourceTree = "<group>"; };
+		A85988641EA4B2830062A5A3 /* Good.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Good.h; sourceTree = "<group>"; };
+		A85988651EA4B2830062A5A3 /* Good.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Good.m; sourceTree = "<group>"; };
 		A865FCB91E6E529100A20DFF /* NMFUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMFUser.h; sourceTree = "<group>"; };
 		A865FCBA1E6E529100A20DFF /* NMFUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMFUser.m; sourceTree = "<group>"; };
 		A865FCBC1E6E54ED00A20DFF /* NMFAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMFAddress.h; sourceTree = "<group>"; };
@@ -177,7 +188,7 @@
 		A87643871E66C1C10038BF4F /* MVVM-RAC-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-RAC-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A876438B1E66C1C10038BF4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A876438D1E66C1C10038BF4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A876438E1E66C1C10038BF4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A876438E1E66C1C10038BF4F /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		A87643961E66C1C10038BF4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A87643991E66C1C10038BF4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A876439B1E66C1C10038BF4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -217,6 +228,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A859885A1EA4AD870062A5A3 /* libz.tbd in Frameworks */,
 				A85988581EA4ACD10062A5A3 /* CoreTelephony.framework in Frameworks */,
 				A85988561EA4ACC60062A5A3 /* Security.framework in Frameworks */,
 				A85988541EA4ACC00062A5A3 /* CoreGraphics.framework in Frameworks */,
@@ -243,6 +255,7 @@
 		187BA3235B6DEA943572A7DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A85988591EA4AD870062A5A3 /* libz.tbd */,
 				A85988571EA4ACD10062A5A3 /* CoreTelephony.framework */,
 				A85988551EA4ACC60062A5A3 /* Security.framework */,
 				A85988531EA4ACC00062A5A3 /* CoreGraphics.framework */,
@@ -405,6 +418,17 @@
 			path = BaiduMap;
 			sourceTree = "<group>";
 		};
+		A859885B1EA4B2400062A5A3 /* 数据管理 */ = {
+			isa = PBXGroup;
+			children = (
+				A859885C1EA4B2400062A5A3 /* DataManager.h */,
+				A859885D1EA4B2400062A5A3 /* DataManager.m */,
+				A859885E1EA4B2400062A5A3 /* ShoppingManager.h */,
+				A859885F1EA4B2400062A5A3 /* ShoppingManager.m */,
+			);
+			path = "数据管理";
+			sourceTree = "<group>";
+		};
 		A865FCB81E6E527700A20DFF /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,7 +462,7 @@
 			isa = PBXGroup;
 			children = (
 				A876438D1E66C1C10038BF4F /* AppDelegate.h */,
-				A876438E1E66C1C10038BF4F /* AppDelegate.m */,
+				A876438E1E66C1C10038BF4F /* AppDelegate.mm */,
 				A87643BF1E66C5AF0038BF4F /* Class */,
 				A87643D01E66C5AF0038BF4F /* Resource */,
 				A87643D11E66C5AF0038BF4F /* Vendor */,
@@ -494,6 +518,8 @@
 		A87643C21E66C5AF0038BF4F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A85988641EA4B2830062A5A3 /* Good.h */,
+				A85988651EA4B2830062A5A3 /* Good.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -524,6 +550,7 @@
 		A87643CF1E66C5AF0038BF4F /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				A859885B1EA4B2400062A5A3 /* 数据管理 */,
 				A859882F1EA4A86A0062A5A3 /* MapManager.h */,
 				A85988301EA4A86A0062A5A3 /* MapManager.m */,
 				A85988311EA4A86A0062A5A3 /* NetWork.h */,
@@ -956,6 +983,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A852E7C01E7A35CF0065F00C /* NMFSettingViewModel.m in Sources */,
+				A85988601EA4B2400062A5A3 /* DataManager.m in Sources */,
 				A8D7262A1E680243004686B6 /* UIImage+NMF.m in Sources */,
 				A87644091E66CB100038BF4F /* NMFShoppingCartViewController.m in Sources */,
 				A865FCC41E6E62F000A20DFF /* NMFViewModelNavigationImpl.m in Sources */,
@@ -967,6 +995,7 @@
 				A87644031E66CAB90038BF4F /* NMFFoundViewController.m in Sources */,
 				A84DD52B1E67BB6400650EE4 /* NMFFoundViewModel.m in Sources */,
 				A865FCBB1E6E529100A20DFF /* NMFUser.m in Sources */,
+				A85988691EA4B2830062A5A3 /* Good.m in Sources */,
 				A859882B1EA499720062A5A3 /* NMFSearchBar.m in Sources */,
 				A8D7262E1E680AB3004686B6 /* NMFMeTableViewCell.m in Sources */,
 				A84DD5641E67F62D00650EE4 /* IQKeyboardManager.m in Sources */,
@@ -985,7 +1014,7 @@
 				A84DD5691E67F62D00650EE4 /* IQTitleBarButtonItem.m in Sources */,
 				A84DD51D1E67B6FE00650EE4 /* RootViewController.m in Sources */,
 				A84DD5661E67F62D00650EE4 /* IQSegmentedNextPrevious.m in Sources */,
-				A876438F1E66C1C10038BF4F /* AppDelegate.m in Sources */,
+				A876438F1E66C1C10038BF4F /* AppDelegate.mm in Sources */,
 				A85988371EA4A86A0062A5A3 /* RequestManager.m in Sources */,
 				A84DD56B1E67F62D00650EE4 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				A84DD5281E67BB3A00650EE4 /* NMFCategoryViewModel.m in Sources */,
@@ -1004,6 +1033,7 @@
 				A8D726241E67FF13004686B6 /* UILabel+NMF.m in Sources */,
 				A85988361EA4A86A0062A5A3 /* NetWork.m in Sources */,
 				A876438C1E66C1C10038BF4F /* main.m in Sources */,
+				A85988611EA4B2400062A5A3 /* ShoppingManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

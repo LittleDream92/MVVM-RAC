@@ -35,6 +35,14 @@
 #import "NMFURLMacro.h"
 
 
+//Tool
+#import "NetWork.h"
+#import "RequestManager.h"
+#import "ShoppingManager.h"
+#import "DataManager.h"
+#import "Good.h"
+#import "NMFUser.h"
+
 //类别
 #import "UIButton+NMFBtn.h"
 #import "UIColor+Hex.h"
@@ -46,6 +54,8 @@
 
 
 #import "NMFBaseViewModel.h"
+
+
 
 
 

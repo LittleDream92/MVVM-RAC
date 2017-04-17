@@ -11,6 +11,9 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
+//定位的单例
+#import "MapManager.h"
+
 
 @interface AppDelegate ()
 
@@ -21,10 +24,37 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    //设置键盘  单例
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;
+    manager.shouldResignOnTouchOutside = YES;
+    manager.enableAutoToolbar = NO;
+    
+    //设置HUD的样式是黑色的
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    
+    //test 读取数据
+    [DataManager readUserData];
+    
+    //test 检测网络是否可用
+    [[NetWork shareInstance] initNetWork];
+    if ([NetWork shareInstance].isNetReachable) {
+        NSLog(@"yes network");
+    } else {
+        NSLog(@"no network");
+    }
+    
+    //test 定位
+    
+    BMKMapManager *mapManager = [[BMKMapManager alloc] init];
+    if ([mapManager start:@"MoboTBCXuQbImL0wfRSCtyHAjk9j6prp" generalDelegate:nil]) {
+        NSLog(@"百度地图startSuccess");
+        //开始定位
+        [[MapManager manager] startUserLocation];
+    }
+    
     
     [self setupRootViewController];
-
-    
     return YES;
 }
 

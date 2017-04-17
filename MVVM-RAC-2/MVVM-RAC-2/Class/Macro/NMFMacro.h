@@ -23,6 +23,10 @@
 #endif
 
 
+///读取用户数据完成
+#define READ_USER_DATA_FINISH @"readUserDataFinish"
+///notificationCenter
+#define NOTIFICATIONS [NSNotificationCenter defaultCenter]
 
 
 //宽高
@@ -36,7 +40,7 @@
 
 #define CURRENT_USER [NMFUser currentUser]
 
-#import "NMFUser.h"
+
 
 
 ///SVP
