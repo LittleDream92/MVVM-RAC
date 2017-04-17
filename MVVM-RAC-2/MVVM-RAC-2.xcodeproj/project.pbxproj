@@ -34,6 +34,8 @@
 		A84DD56F1E67F6AC00650EE4 /* UIButton+NMFBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = A84DD56E1E67F6AC00650EE4 /* UIButton+NMFBtn.m */; };
 		A852E7C01E7A35CF0065F00C /* NMFSettingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A852E7BF1E7A35CF0065F00C /* NMFSettingViewModel.m */; };
 		A852E7C31E7A35E50065F00C /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A852E7C21E7A35E50065F00C /* SettingViewController.m */; };
+		A859882B1EA499720062A5A3 /* NMFSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A859882A1EA499720062A5A3 /* NMFSearchBar.m */; };
+		A859882E1EA49F900062A5A3 /* NMFHomeCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A859882D1EA49F900062A5A3 /* NMFHomeCollectionView.m */; };
 		A865FCBB1E6E529100A20DFF /* NMFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A865FCBA1E6E529100A20DFF /* NMFUser.m */; };
 		A865FCBE1E6E54ED00A20DFF /* NMFAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = A865FCBD1E6E54ED00A20DFF /* NMFAddress.m */; };
 		A865FCC11E6E608300A20DFF /* NMFLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A865FCC01E6E608300A20DFF /* NMFLoginViewModel.m */; };
@@ -119,6 +121,10 @@
 		A852E7BF1E7A35CF0065F00C /* NMFSettingViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMFSettingViewModel.m; sourceTree = "<group>"; };
 		A852E7C11E7A35E50065F00C /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		A852E7C21E7A35E50065F00C /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		A85988291EA499720062A5A3 /* NMFSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMFSearchBar.h; sourceTree = "<group>"; };
+		A859882A1EA499720062A5A3 /* NMFSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMFSearchBar.m; sourceTree = "<group>"; };
+		A859882C1EA49F900062A5A3 /* NMFHomeCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMFHomeCollectionView.h; sourceTree = "<group>"; };
+		A859882D1EA49F900062A5A3 /* NMFHomeCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMFHomeCollectionView.m; sourceTree = "<group>"; };
 		A865FCB91E6E529100A20DFF /* NMFUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMFUser.h; sourceTree = "<group>"; };
 		A865FCBA1E6E529100A20DFF /* NMFUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMFUser.m; sourceTree = "<group>"; };
 		A865FCBC1E6E54ED00A20DFF /* NMFAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMFAddress.h; sourceTree = "<group>"; };
@@ -627,6 +633,10 @@
 		A87643E91E66C82B0038BF4F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A85988291EA499720062A5A3 /* NMFSearchBar.h */,
+				A859882A1EA499720062A5A3 /* NMFSearchBar.m */,
+				A859882C1EA49F900062A5A3 /* NMFHomeCollectionView.h */,
+				A859882D1EA49F900062A5A3 /* NMFHomeCollectionView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -869,6 +879,7 @@
 				A87644031E66CAB90038BF4F /* NMFFoundViewController.m in Sources */,
 				A84DD52B1E67BB6400650EE4 /* NMFFoundViewModel.m in Sources */,
 				A865FCBB1E6E529100A20DFF /* NMFUser.m in Sources */,
+				A859882B1EA499720062A5A3 /* NMFSearchBar.m in Sources */,
 				A8D7262E1E680AB3004686B6 /* NMFMeTableViewCell.m in Sources */,
 				A84DD5641E67F62D00650EE4 /* IQKeyboardManager.m in Sources */,
 				A84DD5651E67F62D00650EE4 /* IQKeyboardReturnKeyHandler.m in Sources */,
@@ -892,6 +903,7 @@
 				A852E7C31E7A35E50065F00C /* SettingViewController.m in Sources */,
 				A87644061E66CACE0038BF4F /* NMFMeViewController.m in Sources */,
 				A84DD5671E67F62D00650EE4 /* IQTextView.m in Sources */,
+				A859882E1EA49F900062A5A3 /* NMFHomeCollectionView.m in Sources */,
 				A84DD5311E67BBB800650EE4 /* NMFMeViewModel.m in Sources */,
 				A84DD56F1E67F6AC00650EE4 /* UIButton+NMFBtn.m in Sources */,
 				A84DD5681E67F62D00650EE4 /* IQBarButtonItem.m in Sources */,
