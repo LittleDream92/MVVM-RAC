@@ -10,4 +10,29 @@
 
 @implementation NMFHomeViewModel
 
+-(instancetype)initWithService:(id<NMFViewModelServices>)service params:(NSDictionary *)params {
+    self = [super initWithService:service params:params];
+    if (self) {
+        [self setupViewModel];
+    }
+    return self;
+}
+
+- (void)setupViewModel {
+    @weakify(self);
+    
+    //刷新
+    self.refreshCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+        @strongify(self);
+        
+        SHOW_SVP(@"加载中");
+        
+//        RACSignal *signal2 = [];
+        
+        RACSignal *signal3;
+        
+        return signal3;
+    }];
+}
+
 @end

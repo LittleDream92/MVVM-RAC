@@ -21,6 +21,14 @@
 @property (nonatomic, strong) RACCommand *headCommand;
 
 //中间按钮点击
+@property (nonatomic, strong) RACCommand *btnCommand;
 
+//good
+@property (nonatomic, strong) RACCommand *goodCommand;
+
+//导航栏
+@property (nonatomic, strong) RACCommand *naviCommand;
+
+@property (nonatomic, strong) RACSubject *searchSubject;
 
 @end
